@@ -8,12 +8,12 @@ public class Leaf : Component
 
     public override void Add(Component component)
     {
-        throw new NotImplementedException();
+        throw new Exception();
     }
 
     public override void Remove(Component component)
     {
-        throw new NotImplementedException();
+        throw new Exception();
     }
 
     public override void Display(int depth)
