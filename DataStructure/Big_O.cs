@@ -2,8 +2,6 @@
 
 class BigO
 {
-    
-    
     #region Big O1
     //Linear
     //RunTime complexity is same in every input
