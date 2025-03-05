@@ -1,6 +1,7 @@
 ﻿namespace DesignPattern.Adapter.ObjectAdapter;
 
-public class Target
+public abstract class Target
 {
-    
+    public abstract void Operation();
 }
+
