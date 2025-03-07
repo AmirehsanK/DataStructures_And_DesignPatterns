@@ -1,0 +1,31 @@
+﻿Creational Patterns
+
+Singleton: Ensures a class has only one instance while providing a global access point.
+Factory Method: Declares an interface for creating an object, but lets subclasses decide which class to instantiate.
+Abstract Factory: Provides an interface to create families of related objects without specifying their concrete classes.
+Builder: Separates the construction of a complex object from its representation, allowing different representations.
+Prototype: Creates new objects by cloning an existing instance, facilitating object copying.
+
+Structural Patterns
+
+Adapter: Converts one interface into another so that incompatible interfaces can work together.
+Bridge: Separates an abstraction from its implementation, allowing both to evolve independently.
+Composite: Composes objects into tree structures to represent part-whole hierarchies uniformly.
+Decorator: Dynamically adds responsibilities to an object without altering its structure.
+Facade: Provides a simplified interface to a complex subsystem.
+Flyweight: Shares common parts of objects to efficiently support large numbers of fine-grained objects.
+Proxy: Provides a surrogate to control access to another object.
+
+Behavioral Patterns
+
+Chain of Responsibility: Passes a request along a chain of handlers until one handles it.
+Command: Encapsulates a request as an object, enabling parameterization, queuing, and undoable operations.
+Interpreter: Defines a grammar for a language and an interpreter that uses the grammar to interpret sentences.
+Iterator: Provides a way to access elements of a collection sequentially without exposing its underlying structure.
+Mediator: Encapsulates how a set of objects interact, promoting loose coupling.
+Memento: Captures and externalizes an object’s internal state so it can be restored later without breaking encapsulation.
+Observer: Defines a one-to-many dependency so that when one object changes state, all its dependents are notified.
+State: Allows an object to alter its behavior when its internal state changes.
+Strategy: Encapsulates interchangeable algorithms, letting the algorithm vary independently from clients.
+Template Method: Defines the skeleton of an algorithm while deferring certain steps to subclasses.
+Visitor: Separates an algorithm from an object structure, allowing new operations to be added without modifying the structure.
