@@ -1,6 +1,6 @@
 ﻿namespace DesignPattern.Prototype;
 
-public abstract class Prototype
+public interface IPrototype
 {
-    
+    IPrototype Clone();
 }
