@@ -1,0 +1,19 @@
+﻿# Build output
+bin/
+obj/
+
+# NuGet
+*.nuget.cache
+project.assets.json
+
+# Rider
+*.sln.iml
+.idea/
+*.DotSettings.User
+
+# VSCode
+.vscode/
+
+# User-specific
+*.user
+*.suo
