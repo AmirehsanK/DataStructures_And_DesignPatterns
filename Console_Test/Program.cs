@@ -221,4 +221,10 @@ contextC.Operation();*/
 
 #endregion
 
+#region Observer
+
+
+
+#endregion
+
 Console.ReadLine();
