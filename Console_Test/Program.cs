@@ -205,9 +205,7 @@ contextC.Operation();*/
 
 #region Chain Of Responsibility
 
-using DesignPattern.Chain_Of_Responsibility;
-
-int[] requests = [2, 5, 14, 22, 18, 3, 24, 20];
+/*int[] requests = [2, 5, 14, 22, 18, 3, 24, 20];
 
 Handler handler1 = new ConcreteHandler1();
 Handler handler2 = new ConcreteHandler2();
@@ -219,13 +217,18 @@ handler2.SetSuccessor(handler3);
 foreach (var i in requests)
 {
     handler1.Handle(i);
-}
+}*/
 
 #endregion
 
 #region Command
 
+/*Receiver receiver=new Receiver();
+Command command = new ConcreteCommand(receiver);
+Invoker invoker = new Invoker();
 
+invoker.setCommand(command);
+invoker.ExecuteCommand();*/
 
 #endregion
 
