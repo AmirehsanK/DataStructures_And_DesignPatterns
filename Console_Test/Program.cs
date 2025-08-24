@@ -251,7 +251,15 @@ Console.WriteLine("Done");*/
 
 #region Observer
 
+using DesignPattern.Observer;
 
+ConcreteSubject subject = new ConcreteSubject();
+subject.Attach(new ConcreteObserver(subject,"A"));
+subject.Attach(new ConcreteObserver(subject,"B"));
+subject.Attach(new ConcreteObserver(subject,"C"));
+
+subject.SubjectState="Hello World!";
+subject.Notify();
 
 #endregion
 
