@@ -234,7 +234,18 @@ invoker.ExecuteCommand();*/
 
 #region Memento
 
+/*using DesignPattern.Memento;
 
+Originator originator = new Originator();
+Caretaker caretaker = new Caretaker();
+
+originator.State = "State #1";
+caretaker.Memento = originator.CreateMemento();
+
+originator.State = "State #2";
+originator.SetMemento(caretaker.Memento);
+
+Console.WriteLine("Done");*/
 
 #endregion
 
