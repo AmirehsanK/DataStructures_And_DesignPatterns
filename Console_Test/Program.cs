@@ -263,4 +263,36 @@ subject.Notify();*/
 
 #endregion
 
+#region Visitor
+
+using DesignPattern.Visitor;
+
+ConcreteElementA ca1 = new ConcreteElementA("Ca1_1");
+ConcreteElementA ca2 = new ConcreteElementA("Ca1_2");
+ConcreteElementA ca3 = new ConcreteElementA("Ca1_3");
+ConcreteElementA ca4 = new ConcreteElementA("Ca1_4");
+
+ConcreteElementB cb1 = new ConcreteElementB(1);
+ConcreteElementB cb2 = new ConcreteElementB(2);
+ConcreteElementB cb3 = new ConcreteElementB(3);
+ConcreteElementB cb4 = new ConcreteElementB(4);
+
+ObjectStructure objStructure = new ObjectStructure();
+
+objStructure.AddElement(ca1);
+objStructure.AddElement(ca2);
+objStructure.AddElement(ca3);
+objStructure.AddElement(ca4);
+objStructure.AddElement(cb1);
+objStructure.AddElement(cb2);
+objStructure.AddElement(cb3);
+objStructure.AddElement(cb4);
+
+Visitor visitor1 = new ConcreteVisitor1();
+Visitor visitor2 = new ConcreteVisitor2(); 
+objStructure.Accept(visitor1);
+objStructure.Accept(visitor2);
+
+#endregion
+
 Console.ReadLine();
