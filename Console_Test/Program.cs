@@ -265,7 +265,7 @@ subject.Notify();*/
 
 #region Visitor
 
-using DesignPattern.Visitor;
+/*using DesignPattern.Visitor;
 
 ConcreteElementA ca1 = new ConcreteElementA("Ca1_1");
 ConcreteElementA ca2 = new ConcreteElementA("Ca1_2");
@@ -291,7 +291,13 @@ objStructure.AddElement(cb4);
 Visitor visitor1 = new ConcreteVisitor1();
 Visitor visitor2 = new ConcreteVisitor2(); 
 objStructure.Accept(visitor1);
-objStructure.Accept(visitor2);
+objStructure.Accept(visitor2);*/
+
+#endregion
+
+#region Mediator
+
+
 
 #endregion
 
