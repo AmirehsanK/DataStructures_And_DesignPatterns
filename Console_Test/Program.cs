@@ -297,8 +297,19 @@ objStructure.Accept(visitor2);*/
 
 #region Mediator
 
+/*using DesignPattern.Mediator;
 
+ConcreteMediator mediator = new ConcreteMediator();
+ConcreteColleagueA colleagueA = new ConcreteColleagueA(mediator);
+ConcreteColleagueB colleagueB = new ConcreteColleagueB(mediator);
+
+mediator.ColleagueA = colleagueA;
+mediator.ColleagueB = colleagueB;
+
+colleagueA.Send("How are you?");
+colleagueB.Send("Fine, thanks");*/
 
 #endregion
+
 
 Console.ReadLine();
