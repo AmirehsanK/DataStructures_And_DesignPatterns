@@ -311,5 +311,10 @@ colleagueB.Send("Fine, thanks");*/
 
 #endregion
 
+#region Iterator
+
+
+
+#endregion
 
 Console.ReadLine();
