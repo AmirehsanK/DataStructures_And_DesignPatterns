@@ -334,4 +334,15 @@ while (!iterator.IsDone())
 
 #endregion
 
+#region State
+
+/*using DesignPattern.State;
+
+Context context = new Context(new ConcreteStateA());
+context.Request();
+context.Request();
+context.Request();*/
+
+#endregion
+
 Console.ReadLine();
