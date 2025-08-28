@@ -313,7 +313,24 @@ colleagueB.Send("Fine, thanks");*/
 
 #region Iterator
 
+/*using DesignPattern.Iterator;
 
+ConcreteAggregate aggregate = new ConcreteAggregate();
+aggregate[0] = "Item A";
+aggregate[1] = "Item B";
+aggregate[2] = "Item C";
+aggregate[3] = "Item D";
+aggregate[4] = "Item E";
+
+Iterator iterator = aggregate.CreateIterator();
+
+Object item = iterator.First();
+
+while (!iterator.IsDone())
+{
+    Console.WriteLine(item);
+    item = iterator.Next();
+}*/
 
 #endregion
 
