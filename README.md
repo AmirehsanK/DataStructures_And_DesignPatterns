@@ -62,11 +62,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - **Author**: Amirehsan Kohannasab
 - **Email**: amirehsank3@gmail.com
+- **Linkedin**: [Link](www.linkedin.com/in/amirehsan-kohannasab)
 - **GitHub**: [AmirehsanK](https://github.com/AmirehsanK)
 
 ## ⭐ Support
 
 If you find this project helpful, please consider giving it a star on GitHub!
 
----
-Made with ❤️ by Amirehsan Kohannasab
