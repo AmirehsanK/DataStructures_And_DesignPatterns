@@ -347,7 +347,20 @@ context.Request();*/
 
 #region Interpreter
 
+/*using DesignPattern.Interpreter;
 
+Context context = new Context();
+
+List<AbstractExpression> list = new List<AbstractExpression>()
+{
+    new TerminalExpression(),
+    new NonterminalExpression(new TerminalExpression(),new TerminalExpression())
+};
+
+foreach (var exp in list)
+{
+    exp.Interpret(context);
+}*/
 
 #endregion
 
