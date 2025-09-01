@@ -364,4 +364,16 @@ foreach (var exp in list)
 
 #endregion
 
+#region Template Method
+
+using DesignPattern.Template_Method;
+
+AbstractClass abstractClassA=new ConcreteClassA();
+AbstractClass abstractClassB=new ConcreteClassB();
+
+abstractClassA.TemplateMethod();
+abstractClassB.TemplateMethod();
+
+#endregion
+
 Console.ReadLine();
