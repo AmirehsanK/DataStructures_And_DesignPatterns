@@ -366,13 +366,22 @@ foreach (var exp in list)
 
 #region Template Method
 
-using DesignPattern.Template_Method;
+/*using DesignPattern.Template_Method;
 
 AbstractClass abstractClassA=new ConcreteClassA();
 AbstractClass abstractClassB=new ConcreteClassB();
 
 abstractClassA.TemplateMethod();
-abstractClassB.TemplateMethod();
+abstractClassB.TemplateMethod();*/
+
+#endregion
+
+#region Proxy
+
+/*using DesignPattern.Proxy;
+
+Proxy proxy = new Proxy();
+proxy.Request();*/
 
 #endregion
 
