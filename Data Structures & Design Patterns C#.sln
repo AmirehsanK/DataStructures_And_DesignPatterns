@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{76A6DA08-37AF-4DE5-87BA-38F35905A895}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console_Test", "Console_Test\Console_Test.csproj", "{06A143FA-D526-498D-A3AF-88A52A98DA4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternsDemo", "PatternsDemo\PatternsDemo.csproj", "{06A143FA-D526-498D-A3AF-88A52A98DA4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

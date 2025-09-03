@@ -1,11 +1,11 @@
 ﻿namespace Data_Structure_1;
 
-class BigO
+internal class BigO
 {
-    #region Big O1
-    //Linear
-    //RunTime complexity is same in every input
-    //input size doesn't matter
+    #region Big O(1)
+    // Constant
+    // Runtime complexity is the same for every input.
+    // Input size does not affect runtime.
     public void Log(int[] numbers)
     {
         Console.WriteLine(numbers[0]);
@@ -14,10 +14,9 @@ class BigO
     #endregion
 
     #region Big O(n)
-    //Linear
-    //runtime adds up linearly
-    //for each input runtime complexity adds up linearly
-    //input - > runtime Complexity ( 5x -> 5x | 1000x -> 1000x)
+    // Linear
+    // Runtime grows proportionally with input size.
+    // Example: 5 items -> 5 steps, 1000 items -> 1000 steps.
     public void Log2(int[] numbers)
     {
         foreach (var variable in numbers)
@@ -25,40 +24,40 @@ class BigO
             Console.WriteLine(variable);
         }
     }
-    // if we have Big O1 in Big O(n) we dont consider the O1 because it has a very minimal effect
-    // zarib dar Big O(n) ham tasiri rooye on nadarad va nadide gerefte mishavad
-    // O(2m) ham manand O(n) Linear ast
-    //example
-    // agar dp voroodi ham dashte bashim baz ham n ra dar nazar migirim chon tasiri dar khati boodan an nadarad
-    public void Log3(int[] numbers,string[] names)
+    // If an O(1) operation exists within O(n), the O(1) is ignored because its impact is minimal.
+    // Constants do not affect O(n) and are dropped.
+    // For example, O(2n) is still O(n).
+    // Example with multiple inputs: treat each collection separately.
+    // When a method has two inputs, the complexity becomes O(n + m).
+    public void Log3(int[] numbers, string[] names)
     {
-        foreach (var variable in numbers)// O(n)
+        foreach (var variable in numbers) // O(n)
         {
             Console.WriteLine(variable);
         }
 
-        foreach (var variable in names)// O(m)
+        foreach (var variable in names) // O(m)
         {
             Console.WriteLine(variable);
         }
     }
-    //O(n)
-    //O(4 + n) -> O(n)
-    //O(5n) -> O(n(
-    //O(n + m) -> O(n)
+    // Examples:
+    // O(4 + n) -> O(n)
+    // O(5n) -> O(n)
+    // O(n + m)
     #endregion
 
     #region Big O(n^2)
 
-    //Quadratic 
-    //for each added input complexity rises quadratically 
+    // Quadratic
+    // Complexity rises quadratically with input size.
     public void Log4(int[] numbers)
     {
-        foreach(var number in numbers)
+        foreach (var number in numbers)
         {
             foreach (var variable in numbers)
             {
-                Console.WriteLine(variable+" "+number);
+                Console.WriteLine(variable + " " + number);
             }
         }
     }
@@ -70,11 +69,11 @@ class BigO
         {
             Console.WriteLine(variable);
         }
-        foreach(var number in numbers)
+        foreach (var number in numbers)
         {
             foreach (var variable in numbers)
             {
-                Console.WriteLine(variable+" "+number);
+                Console.WriteLine(variable + " " + number);
             }
         }
     }
@@ -82,13 +81,13 @@ class BigO
     //O(n^3)
     public void Log6(int[] numbers)
     {
-        foreach(var number in numbers)
+        foreach (var number in numbers)
         {
             foreach (var variable in numbers)
             {
                 foreach (var variable2 in numbers)
                 {
-                    Console.WriteLine(variable+" "+number+" "+variable2);
+                    Console.WriteLine(variable + " " + number + " " + variable2);
                 }
             }
         }
@@ -96,45 +95,46 @@ class BigO
     #endregion
     
     #region Big O(log n)
-    
-    //Only works if the array is sorted
-    //in 1 Milion input searching for one input in linear search we need 1 milion runtime complexity
-    //but in log we need 19 runtime complexity at max
+
+    // Only works if the array is sorted.
+    // With one million items, linear search may require one million steps,
+    // but binary search needs at most 19 steps.
     
     #endregion
 
     #region Big O(2^n)
 
-    //Exponential(Namayi)
-    //Worst one in runtime complexity
+    // Exponential
+    // Extremely poor scalability.
     #endregion
 
     #region Runtime Complexity Ranking
-   
-    //Constant O(1)  1 -> 1
-    //Logarithmic O(log n) 1 -> 2
-    //Linear O(n) 10 -> 100
-    //Quadratic O(n ^ 2) 100 -> 10000
-    //Exponential O(2 ^ n) 1024 -> 1.2 * 10^30
+
+    // Constant O(1): 1 -> 1
+    // Logarithmic O(log n): 1 -> 2
+    // Linear O(n): 10 -> 100
+    // Quadratic O(n^2): 100 -> 10,000
+    // Exponential O(2^n): 1024 -> 1.2 * 10^30
     
     #endregion
 
     #region Space Complexity
 
-    //Shows how much ram storage is used 
-    //we cant have both space complexity and runtime complexity in ideal form 
-    //we need to trade off 
-    
-    //example
+    // Indicates how much memory is used.
+    // We cannot optimize both space and runtime perfectly.
+    // A trade-off is often required.
+
+    // Example
     public void Log7(string[] names)
     {
-        //SC(Space Complexity) -> O(1)
-        var copy=new string[names.Length];
+        // SC -> O(n)
+        // A copy array of size n is allocated.
+        var copy = new string[names.Length];
         foreach (var variable in names)
         {
             Console.WriteLine(variable);
         }
     }
-    
+
     #endregion
 }
