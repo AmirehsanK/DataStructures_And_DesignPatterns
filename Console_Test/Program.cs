@@ -385,4 +385,27 @@ proxy.Request();*/
 
 #endregion
 
+#region Abstract Factory
+
+/*using DesignPattern.Abstract_Factory;
+using DesignPattern.Abstract_Factory.Services.ProductA;
+using DesignPattern.Abstract_Factory.Services.ProductB;
+
+IAbstractFactory factory1 = new ConcreteFactory1();
+IAbstractFactory factory2 = new ConcreteFactory2();
+
+IAbstractProductA productA1= factory1.CreateProductA();
+IAbstractProductB productB1= factory1.CreateProductB();
+
+productA1.Execute();
+productB1.Execute();
+
+IAbstractProductA productA2= factory2.CreateProductA();
+IAbstractProductB productB2= factory2.CreateProductB();
+
+productA2.Execute();
+productB2.Execute();*/
+
+#endregion
+
 Console.ReadLine();
