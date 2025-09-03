@@ -1,5 +1,8 @@
-﻿
-#region Decorator
+﻿#region Decorator
+// Summary: Demonstrates the Decorator pattern which attaches additional
+//          responsibilities to objects dynamically.
+// Time Complexity: O(n) where n is the number of decorator layers.
+// Number of Operations: 7
 
 #region 1.1
 
@@ -43,6 +46,9 @@ Console.ReadLine();*/
 #endregion
 
 #region Facade
+// Summary: Wraps complex subsystems with a simple interface.
+// Time Complexity: O(1)
+// Number of Operations: 1
 
 /*
 var facade = new Facade();
@@ -53,6 +59,9 @@ facade.DoSomething();
 #endregion
 
 #region Bridge
+// Summary: Decouples an abstraction from its implementation so the two can vary.
+// Time Complexity: O(1)
+// Number of Operations: 1
 
 /*Abstraction abstraction = new RefinedAbstraction();
 abstraction.Function();*/
@@ -60,6 +69,9 @@ abstraction.Function();*/
 #endregion
 
 #region Composite
+// Summary: Composes objects into tree structures to represent part-whole hierarchies.
+// Time Complexity: O(n) where n is the number of nodes in the tree.
+// Number of Operations: 15
 
 /*Component component = new Composite("Root Item", [
     new Leaf("Leaf 1"),
@@ -85,6 +97,9 @@ component.Display(1);*/
 #endregion
 
 #region Flyweight
+// Summary: Shares common state across many small objects to save memory.
+// Time Complexity: O(n) where n is the number of flyweight operations.
+// Number of Operations: 4
 
 /*var flyweightFactory = new FlyweightFactory();
 
@@ -109,6 +124,9 @@ unSharedConcreteFlyweight.Operation("unSharedConcreteFlyweight Extrinsic state")
 #endregion
 
 #region Adapter
+// Summary: Converts the interface of a class into another interface clients expect.
+// Time Complexity: O(1)
+// Number of Operations: 2
 
 #region Object Adapter
 
@@ -129,6 +147,9 @@ target2.Operation();*/
 #endregion
 
 #region Prototype
+// Summary: Creates new objects by copying existing instances.
+// Time Complexity: O(n) where n is the size of the object graph being cloned.
+// Number of Operations: 2
 
 /*//Shallow Copy
 ConcretePrototype1 concretePrototype1 = new ConcretePrototype1();
@@ -142,6 +163,9 @@ ConcretePrototype2 concretePrototype2_2 =(ConcretePrototype2)concretePrototype1.
 #endregion
 
 #region Singleton
+// Summary: Ensures a class has only one instance and provides global access.
+// Time Complexity: O(1)
+// Number of Operations: 2
 
 /*Singelton singelton = Singelton.GetInstance();
 Singelton singelton_2 = Singelton.GetInstance();*/
@@ -149,6 +173,10 @@ Singelton singelton_2 = Singelton.GetInstance();*/
 #endregion
 
 #region Factory Method
+// Summary: Defines an interface for creating an object but lets subclasses decide
+//          which class to instantiate.
+// Time Complexity: O(n) where n is the number of requested instances.
+// Number of Operations: 6
 
 /*
 IUserService userService1;
@@ -170,6 +198,9 @@ userService3.Operation();
 #endregion
 
 #region Builder
+// Summary: Separates the construction of a complex object from its representation.
+// Time Complexity: O(n) where n is the number of build steps.
+// Number of Operations: 8
 
 /*Director director = new();
 var builder1 = new ConcreteProductBuilder1();
@@ -190,6 +221,9 @@ product2.Show();*/
 #endregion
 
 #region Strategy
+// Summary: Encapsulates interchangeable algorithms behind a common interface.
+// Time Complexity: O(n) where n is the number of strategy operations.
+// Number of Operations: 3
 
 /*Context contextA = new(new ConcreteStrategyA());
 Context contextB = new(new ConcreteStrategyB());
@@ -204,6 +238,9 @@ contextC.Operation();*/
 #endregion
 
 #region Chain Of Responsibility
+// Summary: Passes requests along a chain of handlers until one handles it.
+// Time Complexity: O(n) where n is the number of handlers/requests.
+// Number of Operations: 8
 
 /*int[] requests = [2, 5, 14, 22, 18, 3, 24, 20];
 
@@ -222,6 +259,10 @@ foreach (var i in requests)
 #endregion
 
 #region Command
+// Summary: Encapsulates a request as an object, allowing for parameterization
+//          and queuing of requests.
+// Time Complexity: O(1)
+// Number of Operations: 2
 
 /*Receiver receiver=new Receiver();
 Command command = new ConcreteCommand(receiver);
@@ -233,6 +274,9 @@ invoker.ExecuteCommand();*/
 #endregion
 
 #region Memento
+// Summary: Captures and restores an object's internal state without violating encapsulation.
+// Time Complexity: O(1)
+// Number of Operations: 4
 
 /*using DesignPattern.Memento;
 
@@ -250,6 +294,10 @@ Console.WriteLine("Done");*/
 #endregion
 
 #region Observer
+// Summary: Defines a one-to-many dependency so that observers are notified
+//          of state changes.
+// Time Complexity: O(n) where n is the number of observers.
+// Number of Operations: 5
 
 /*using DesignPattern.Observer;
 
@@ -264,6 +312,9 @@ subject.Notify();*/
 #endregion
 
 #region Visitor
+// Summary: Represents operations to be performed on elements of an object structure.
+// Time Complexity: O(n) where n is the number of elements visited.
+// Number of Operations: 10
 
 /*using DesignPattern.Visitor;
 
@@ -296,6 +347,9 @@ objStructure.Accept(visitor2);*/
 #endregion
 
 #region Mediator
+// Summary: Defines an object that encapsulates how a set of objects interact.
+// Time Complexity: O(1)
+// Number of Operations: 4
 
 /*using DesignPattern.Mediator;
 
@@ -312,6 +366,10 @@ colleagueB.Send("Fine, thanks");*/
 #endregion
 
 #region Iterator
+// Summary: Provides a way to access elements of a collection sequentially
+//          without exposing its underlying representation.
+// Time Complexity: O(n) where n is the number of elements iterated.
+// Number of Operations: 5
 
 /*using DesignPattern.Iterator;
 
@@ -335,6 +393,9 @@ while (!iterator.IsDone())
 #endregion
 
 #region State
+// Summary: Allows an object to alter its behavior when its internal state changes.
+// Time Complexity: O(n) where n is the number of state transitions.
+// Number of Operations: 3
 
 /*using DesignPattern.State;
 
@@ -346,6 +407,10 @@ context.Request();*/
 #endregion
 
 #region Interpreter
+// Summary: Defines a grammatical representation for a language and an interpreter
+//          to evaluate sentences in the language.
+// Time Complexity: O(n) where n is the number of expressions.
+// Number of Operations: 2
 
 /*using DesignPattern.Interpreter;
 
@@ -365,6 +430,9 @@ foreach (var exp in list)
 #endregion
 
 #region Template Method
+// Summary: Defines the skeleton of an algorithm, deferring some steps to subclasses.
+// Time Complexity: O(n) where n is the number of template executions.
+// Number of Operations: 2
 
 /*using DesignPattern.Template_Method;
 
@@ -377,6 +445,9 @@ abstractClassB.TemplateMethod();*/
 #endregion
 
 #region Proxy
+// Summary: Provides a surrogate or placeholder for another object to control access to it.
+// Time Complexity: O(1)
+// Number of Operations: 1
 
 /*using DesignPattern.Proxy;
 
@@ -386,6 +457,10 @@ proxy.Request();*/
 #endregion
 
 #region Abstract Factory
+// Summary: Provides an interface for creating families of related objects
+//          without specifying their concrete classes.
+// Time Complexity: O(n) where n is the number of products created.
+// Number of Operations: 8
 
 /*using DesignPattern.Abstract_Factory;
 using DesignPattern.Abstract_Factory.Services.ProductA;
